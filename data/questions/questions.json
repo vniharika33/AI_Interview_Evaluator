@@ -1,0 +1,49 @@
+{
+  "python": [
+    "Explain Python lists vs tuples.",
+    "What are decorators in Python?",
+    "How does memory management work in Python?"
+  ],
+  "machine learning": [
+    "What is overfitting and how do you prevent it?",
+    "Explain bias-variance tradeoff.",
+    "Difference between supervised and unsupervised learning."
+  ],
+  "data structures": [
+    "Explain stack vs queue.",
+    "What is a hash table?",
+    "Explain time complexity of binary search."
+  ],
+  "algorithms": [
+    "Explain merge sort.",
+    "What is dynamic programming?",
+    "Explain greedy algorithms with example."
+  ],
+  "sql": [
+    "Difference between WHERE and HAVING clause.",
+    "Explain JOIN types in SQL."
+  ],
+  "Explain time complexity of binary search.": [
+  "time complexity",
+  "big o",
+  "performance",
+  "input size"
+],
+
+"What is a dictionary in Python?": [
+  "dictionary",
+  "key",
+  "value",
+  "hashing",
+  "mutable"
+],
+
+"What is bias-variance tradeoff?": [
+  "bias",
+  "variance",
+  "overfitting",
+  "underfitting",
+  "generalization"
+]
+
+}

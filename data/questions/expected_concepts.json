@@ -1,0 +1,135 @@
+{
+  "Explain Python lists vs tuples.": [
+    "list",
+    "tuple",
+    "mutable",
+    "immutable",
+    "performance",
+    "memory"
+  ],
+
+  "What are decorators in Python?": [
+    "decorator",
+    "function",
+    "wrapper",
+    "higher order",
+    "@" 
+  ],
+
+  "How does memory management work in Python?": [
+    "memory management",
+    "heap",
+    "stack",
+    "garbage collection",
+    "reference counting"
+  ],
+
+  "What is overfitting and how do you prevent it?": [
+    "overfitting",
+    "generalization",
+    "regularization",
+    "cross validation",
+    "dropout",
+    "early stopping"
+  ],
+
+  "Explain bias-variance tradeoff.": [
+    "bias",
+    "variance",
+    "overfitting",
+    "underfitting",
+    "generalization"
+  ],
+
+  "Difference between supervised and unsupervised learning.": [
+    "supervised",
+    "unsupervised",
+    "labeled data",
+    "unlabeled data",
+    "classification",
+    "clustering"
+  ],
+
+  "Explain stack vs queue.": [
+    "stack",
+    "queue",
+    "lifo",
+    "fifo",
+    "push",
+    "pop",
+    "enqueue",
+    "dequeue"
+  ],
+
+  "What is a hash table?": [
+    "hash table",
+    "hash function",
+    "key",
+    "value",
+    "collision",
+    "lookup"
+  ],
+
+  "Explain time complexity of binary search.": [
+    "binary search",
+    "time complexity",
+    "big o",
+    "log n",
+    "sorted"
+  ],
+
+  "Explain merge sort.": [
+    "merge sort",
+    "divide and conquer",
+    "recursion",
+    "merge",
+    "time complexity"
+  ],
+
+  "What is dynamic programming?": [
+    "dynamic programming",
+    "overlapping subproblems",
+    "optimal substructure",
+    "memoization",
+    "tabulation"
+  ],
+
+  "Explain greedy algorithms with example.": [
+    "greedy",
+    "local optimum",
+    "global optimum",
+    "example",
+    "optimization"
+  ],
+
+  "Difference between WHERE and HAVING clause.": [
+    "where",
+    "having",
+    "group by",
+    "aggregate",
+    "filter"
+  ],
+
+  "Explain JOIN types in SQL.": [
+    "join",
+    "inner join",
+    "left join",
+    "right join",
+    "full join"
+  ],
+
+  "Explain time complexity.": [
+    "time complexity",
+    "big o",
+    "performance",
+    "input size"
+  ],
+
+  "What is a dictionary in Python?": [
+    "dictionary",
+    "key",
+    "value",
+    "hashing",
+    "mutable"
+  ]
+}
