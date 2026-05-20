@@ -1,12 +1,12 @@
-# GenAI-Interview-Evaluator
+# AI-Interview-Evaluator
 
 An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically generates interview questions based on a candidate’s Resume and Job Description (JD), records voice responses, converts speech to text using Whisper, evaluates answers using semantic NLP techniques, and generates an AI-based interview score with feedback.
 
 ---
 
-# 🚀 Features
+#  Features
 
-## ✅ Resume & JD Skill Matching
+##  Resume & JD Skill Matching
 - Extracts overlapping technical skills from:
   - Resume
   - Job Description
@@ -14,7 +14,7 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 
 ---
 
-## ✅ Custom Transformer-based Question Generation
+##  Custom Transformer-based Question Generation
 - Built a custom GPT-style Transformer model from scratch
 - Generates interview questions dynamically based on detected topics
 - Includes:
@@ -26,7 +26,7 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 
 ---
 
-## ✅ Voice-based Interview Answers
+##  Voice-based Interview Answers
 - Candidate uploads or records audio answers
 - Uses OpenAI Whisper for:
   - Speech-to-text conversion
@@ -34,7 +34,7 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 
 ---
 
-## ✅ Semantic AI Evaluation
+##  Semantic AI Evaluation
 - Evaluates candidate answers using:
   - Concept coverage
   - Semantic similarity
@@ -43,7 +43,7 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 
 ---
 
-## ✅ Final AI Interview Score
+##  Final AI Interview Score
 - Generates:
   - Technical score
   - Relevance score
@@ -53,7 +53,7 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 
 ---
 
-## ✅ Streamlit Frontend
+##  Streamlit Frontend
 - Interactive web interface
 - Upload Resume/JD
 - Upload voice answers
@@ -61,75 +61,11 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 
 ---
 
-# 🧠 System Architecture
+#  System Architecture
 
-```text
-                        ┌────────────────────┐
-                        │   Job Description  │
-                        └─────────┬──────────┘
-                                  │
-                                  │
-                        ┌─────────▼──────────┐
-                        │      Resume        │
-                        └─────────┬──────────┘
-                                  │
-                                  ▼
-                    ┌─────────────────────────┐
-                    │   Skill Extraction NLP  │
-                    │  (SpaCy + Matching)     │
-                    └─────────┬───────────────┘
-                              │
-                              ▼
-                 ┌────────────────────────────┐
-                 │ Matched Skills / Topics    │
-                 └──────────┬─────────────────┘
-                             │
-                             ▼
-            ┌──────────────────────────────────┐
-            │ Custom GPT-style Transformer LLM │
-            │  - Tokenization                  │
-            │  - Embeddings                    │
-            │  - Multi-head Attention          │
-            │  - Transformer Blocks            │
-            │  - Text Generation               │
-            └──────────────┬───────────────────┘
-                           │
-                           ▼
-              ┌─────────────────────────┐
-              │ Generated Interview Qs  │
-              └──────────┬──────────────┘
-                         │
-                         ▼
-              ┌─────────────────────────┐
-              │ Candidate Voice Answer  │
-              └──────────┬──────────────┘
-                         │
-                         ▼
-            ┌────────────────────────────┐
-            │ Whisper Speech-to-Text     │
-            │  (OpenAI Whisper)          │
-            └──────────┬─────────────────┘
-                       │
-                       ▼
-             ┌──────────────────────────┐
-             │ Transcribed Answer Text  │
-             └──────────┬───────────────┘
-                        │
-                        ▼
-         ┌────────────────────────────────┐
-         │ Semantic AI Evaluation Engine  │
-         │                                │
-         │ - Concept Coverage             │
-         │ - Semantic Similarity          │
-         │ - Fluency Analysis             │
-         └─────────────┬──────────────────┘
-                       │
-                       ▼
-          ┌──────────────────────────────┐
-          │ Final AI Interview Score     │
-          │ + Feedback Report            │
-          └──────────────────────────────┘
 ```
+![Uploading ChatGPT Image May 21, 2026, 12_01_04 AM.png…]()
+
 
 ---
 
@@ -227,21 +163,21 @@ streamlit run app.py
 
 ---
 
-# 📊 Evaluation Metrics
+#  Evaluation Metrics
 
 The system evaluates answers using:
 
-## ✅ Concept Coverage
+##  Concept Coverage
 Checks whether important technical concepts are present in the answer.
 
 ---
 
-## ✅ Semantic Relevance
+##  Semantic Relevance
 Uses sentence embeddings to compare answer meaning with expected concepts.
 
 ---
 
-## ✅ Fluency Analysis
+##  Fluency Analysis
 Evaluates:
 - Answer length
 - Sentence structure
@@ -249,7 +185,7 @@ Evaluates:
 
 ---
 
-# 🔥 Example Workflow
+#  Example Workflow
 
 ```text
 Resume + JD
@@ -276,7 +212,7 @@ Final Interview Score + Feedback
 
 ---
 
-# 🧪 Future Improvements
+#  Future Improvements
 
 - Fine-tuned LLM for better question quality
 - Real-time voice interview mode
@@ -287,15 +223,4 @@ Final Interview Score + Feedback
 
 ---
 
-# 👩‍💻 Author
 
-**Niharika V**
-
-GitHub:  
-https://github.com/vniharika33
-
----
-
-# ⭐ If you like this project
-
-Star the repository and connect with me on GitHub!
