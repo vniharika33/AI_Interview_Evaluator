@@ -1,0 +1,12 @@
+Generate interview questions on Operating System
+
+1. What is deadlock?
+2. What is process scheduling?
+3. What is virtual memory?
+
+
+Generate interview questions on DBMS
+
+1. What is normalization?
+2. What is indexing?
+3. What is SQL join?

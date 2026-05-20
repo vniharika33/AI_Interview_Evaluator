@@ -1,41 +1,46 @@
-import json
-from pathlib import Path
-from ml.resume_parser import extract_skills
+from ml.llm.generate import generate_text
 
 
+# -----------------------------
+# GENERATE QUESTIONS FROM TOPICS
+# -----------------------------
+def generate_interview_questions(topics, questions_per_topic=2):
 
-# Project root
-BASE_DIR = Path(__file__).resolve().parent.parent
+    all_questions = []
 
-def load_questions():
-    path = BASE_DIR / "data/questions/questions.json"
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    for topic in topics:
 
-def select_questions(jd_text, resume_text, max_questions=5):
-    jd_skills = extract_skills(jd_text)
-    resume_skills = extract_skills(resume_text)
+        prompt = f"""
+Generate {questions_per_topic} interview questions on {topic}.
 
-    matched_skills = list(set(jd_skills) & set(resume_skills))
-    question_bank = load_questions()
+Questions:
+"""
 
-    selected = []
+        output = generate_text(prompt, max_tokens=60)
 
-    for skill in matched_skills:
-        if skill in question_bank:
-            selected.extend(question_bank[skill])
+        all_questions.append({
+            "topic": topic,
+            "questions": output
+        })
 
-    return selected[:max_questions]
+    return all_questions
 
+
+# -----------------------------
+# TEST RUN
+# -----------------------------
 if __name__ == "__main__":
-    jd_path = BASE_DIR / "data/jd/sample_jd.txt"
-    resume_path = BASE_DIR / "data/resumes/student1.txt"
 
-    jd_text = jd_path.read_text(encoding="utf-8")
-    resume_text = resume_path.read_text(encoding="utf-8")
+    matched_topics = [
+        "Operating System",
+        "DBMS",
+        "Networking"
+    ]
 
-    questions = select_questions(jd_text, resume_text)
+    questions = generate_interview_questions(matched_topics)
 
-    print("Selected Interview Questions:")
-    for i, q in enumerate(questions, 1):
-        print(f"{i}. {q}")
+    for item in questions:
+        print("\n====================")
+        print("TOPIC:", item["topic"])
+        print("====================")
+        print(item["questions"])

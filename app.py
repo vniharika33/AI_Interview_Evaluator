@@ -2,7 +2,11 @@ import streamlit as st
 from PyPDF2 import PdfReader
 from pathlib import Path
 
-from pipeline import process_jd_and_resume, evaluate_audio_answer
+from pipeline import (
+    process_jd_and_resume,
+    generate_questions_from_topics,
+    evaluate_audio_answer
+)
 
 # ---------------- CONFIG ----------------
 st.set_page_config(
@@ -67,7 +71,7 @@ if jd_file and resume_file:
     if not questions:
         st.warning("No matching questions found for this JD and Resume.")
     else:
-        st.subheader("🧠 Generated Interview Questions")
+        st.subheader(" Generated Interview Questions")
 
         selected_question = st.selectbox(
             "Select a question to answer",
@@ -77,7 +81,7 @@ if jd_file and resume_file:
         st.divider()
 
         # ---------------- AUDIO UPLOAD ----------------
-        st.subheader("🎤 Upload Audio Answer")
+        st.subheader(" Upload Audio Answer")
 
         audio_file = st.file_uploader(
             "Upload your answer (.wav format)",
