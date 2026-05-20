@@ -63,8 +63,8 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 
 #  System Architecture
 
-```
-<img width="494" height="329" alt="image" src="https://github.com/user-attachments/assets/22e4e442-e24f-4913-89e8-316a19520a86" />
+<img width="494" height="329" alt="image" src="https://github.com/user-attachments/assets/19c7a912-8ff2-49d8-8560-0bf1730f3c6f" />
+
 
 ---
 
@@ -85,7 +85,7 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 
 # 📂 Project Structure
 
-```text
+
 GenAI-Interview-Evaluator/
 │
 ├── ml/
@@ -116,9 +116,9 @@ GenAI-Interview-Evaluator/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-```
 
----
+
+
 
 # ⚙️ Installation
 
@@ -160,7 +160,7 @@ python -m spacy download en_core_web_sm
 streamlit run app.py
 ```
 
----
+
 
 #  Evaluation Metrics
 
