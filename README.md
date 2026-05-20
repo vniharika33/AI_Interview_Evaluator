@@ -85,7 +85,7 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 
 # 📂 Project Structure
 
-
+```text
 GenAI-Interview-Evaluator/
 │
 ├── ml/
@@ -116,6 +116,8 @@ GenAI-Interview-Evaluator/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+
+```
 
 
 
