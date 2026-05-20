@@ -34,7 +34,7 @@ def read_uploaded_file(uploaded_file):
 
 
 # ---------------- UI ----------------
-st.title("🎯 AI Interview Evaluation System")
+st.title(" AI Interview Evaluation System")
 st.markdown(
     """
     This system helps recruiters evaluate candidates using:
