@@ -64,8 +64,7 @@ An end-to-end **GenAI-powered AI Interview Evaluation System** that dynamically 
 #  System Architecture
 
 ```
-![Uploading ChatGPT Image May 21, 2026, 12_01_04 AM.png…]()
-
+<img width="494" height="329" alt="image" src="https://github.com/user-attachments/assets/22e4e442-e24f-4913-89e8-316a19520a86" />
 
 ---
 
@@ -205,7 +204,7 @@ Final Interview Score + Feedback
 
 ---
 
-#Dashboard
+## Dashboard
 
 <img width="383" height="491" alt="image" src="https://github.com/user-attachments/assets/5c6c4d26-d629-4f72-956a-9075257e7c52" />
 
